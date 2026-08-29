@@ -11,7 +11,6 @@ import ScrollToTop from './components/ScrollToTop';
 const Home = React.lazy(() => import('./pages/Home'));
 const GetCertified = React.lazy(() => import('./pages/GetCertified'));
 const PaidTestPage = React.lazy(() => import('./pages/PaidTestPage'));
-const CourseDashboard = React.lazy(() => import('./pages/CourseDashboard'));
 const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
@@ -25,11 +24,11 @@ const PageLoader = () => (
       <div className="absolute inset-0 rounded-full border-4 border-neutral-200 border-t-black dark:border-neutral-800 dark:border-t-white animate-spin"></div>
       {/* Inner glowing pulsing orb */}
       <div className="absolute inset-2 rounded-full bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 animate-pulse flex items-center justify-center">
-        <span className="material-symbols-rounded text-base text-black dark:text-white">terminal</span>
+     
       </div>
     </div>
     <span className="mt-4 text-[10px] font-black uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 animate-pulse">
-      Loading System...
+      Loading ...
     </span>
   </div>
 );
@@ -159,7 +158,6 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
-              <Route path="/:courseId" element={<CourseDashboard />} />
             </Routes>
           </React.Suspense>
         </main>
