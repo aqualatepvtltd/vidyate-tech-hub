@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://vidyate-student-hub.vercel.app/vidyate-logo-main.ico" />
+    <title>Vidyate Tech Hub - Premium Academic Resources for Engineering Students</title>
+    <meta name="description"
+        content="Vidyate Tech Hub: India's premier academic platform for Computer Science, Electronics, and Mechanical Engineering students. Access double-checked study materials, gate prep question banks, and textbook solutions." />
+    <meta name="keywords"
+        content="Engineering Education, Computer Science Notes, DSA guides, OS solutions, DBMS textbooks, Electronics study materials, Microprocessors assembly, Mechanical Thermodynamics, Fluid Mechanics, Vidyate Tech Hub, India" />
+    <meta name="author" content="Vidyate Team" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="canonical" content="https://vidyate-tech-hub.vercel.app/" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Open Graph Enhanced -->
+    <meta property="og:title"
+        content="Vidyate Tech Hub: Engineering Notes, Lab Manuals, Gate Questions & Coding Guides | CSE, ECE, ME" />
+    <meta property="og:description"
+        content="Free engineering notes, lecture slides, coding interview checksheets, lab manuals, and career insights. Join thousands of engineering students succeeding with Vidyate Tech Hub." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vidyate-tech-hub.vercel.app/" />
+    <meta property="og:image" content="https://vidyate-student-hub.vercel.app/vidyate-logo-main.webp" />
+    <meta property="og:image:alt" content="Vidyate Tech Hub - Education Logo" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Vidyate Tech Hub" />
+
+    <!-- Twitter Cards Enhanced -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+        content="Vidyate Tech Hub: CSE, ECE, ME Study Materials, Code Exercises & Lab Manuals" />
+    <meta name="twitter:description"
+        content="Download comprehensive engineering notes, programming tutorials, and electronics diagrams. India's best academic learning portal for engineering students." />
+    <meta name="twitter:image" content="https://vidyate-student-hub.vercel.app/vidyate-logo-main.webp" />
+    <meta name="twitter:image:alt" content="Vidyate Engineering Student Hub Logo" />
+
+    <!-- Local SEO & India Targeting -->
+    <meta name="geo.region" content="IN-BR" /> 
+    <meta name="geo.placeholder" content="India" />
+    
+    <!-- Mobile & Performance -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Vidyate Tech Hub" />
+    <link rel="apple-touch-icon" href="https://vidyate-student-hub.vercel.app/vidyate-logo-main.ico" />
+
+    <!-- Additional SEO Boosters -->
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="3 days" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Resource Hints for Loading Speed Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Google Icons / Material Symbols Rounded -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        :root {
+            --brand-green: #000000;
+            --brand-emerald: #171717;
+            --deep-forest: #000000;
+            --accent-yellow: #f97316;
+            --violet: #262626;
+
+            --bg-color: #0a0a0a; /* Modern Tech Stark Black */
+            --text-main: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --glass-bg: rgba(255, 255, 255, 0.02);
+            --glass-border: rgba(249, 115, 22, 0.25);
+            --mesh-opacity: 0.11;
+            --noise-opacity: 0.03;
+        }
+
+        .light-mode {
+            --bg-color: #ffffff; /* Modern Tech Stark White */
+            --text-main: #000000;
+            --text-muted: #404040;
+            --glass-bg: rgba(0, 0, 0, 0.01);
+            --glass-border: rgba(249, 115, 22, 0.22);
+            --mesh-opacity: 0.07;
+            --noise-opacity: 0.04;
+        }
+
+        /* Global opacity adjustments for Light Mode */
+        .light-mode .opacity-70 {
+            opacity: 0.9 !important;
+        }
+
+        .light-mode .opacity-60 {
+            opacity: 0.85 !important;
+        }
+
+        .light-mode .opacity-50 {
+            opacity: 0.8 !important;
+        }
+
+        .light-mode .opacity-40 {
+            opacity: 0.75 !important;
+        }
+
+        .light-mode .opacity-30 {
+            opacity: 0.65 !important;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            overflow-x: hidden;
+            transition: background-color 0.15s ease-out, color 0.15s ease-out;
+            position: relative;
+            font-size: 12.6px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            font-size: 90%;
+        }
+
+        /* Stark Orange Aurora Mesh Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 120%;
+            height: 120%;
+            background:
+                radial-gradient(at 10% 10%, rgba(249, 115, 22, var(--mesh-opacity)) 0px, transparent 50%),
+                radial-gradient(at 90% 15%, rgba(251, 146, 60, calc(var(--mesh-opacity) * 0.45)) 0px, transparent 40%),
+                radial-gradient(at 85% 90%, rgba(234, 88, 12, calc(var(--mesh-opacity) * 0.35)) 0px, transparent 50%),
+                radial-gradient(at 15% 85%, rgba(253, 186, 116, calc(var(--mesh-opacity) * 0.25)) 0px, transparent 40%),
+                radial-gradient(at 50% 50%, rgba(249, 115, 22, calc(var(--mesh-opacity) * 0.2)) 0px, transparent 60%);
+            z-index: -2;
+            pointer-events: none;
+            transition: background 0.15s ease-out;
+            animation: aurora-breath 25s ease-in-out infinite alternate;
+            filter: blur(40px);
+        }
+
+        @keyframes aurora-breath {
+            0% {
+                transform: scale(1) translate(0, 0);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.1) translate(-2%, 2%);
+                opacity: 1;
+            }
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: var(--noise-opacity);
+            z-index: -1;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            transition: opacity 0.15s ease-out;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: inherit;
+            letter-spacing: -0.025em;
+        }
+
+        .glass {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            transition: background 0.15s ease-out, border 0.15s ease-out, transform 0.15s ease-out, box-shadow 0.15s ease-out;
+        }
+
+        .light-mode .glass {
+            box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.03);
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .text-theme-muted {
+            color: var(--text-muted);
+        }
+
+        @keyframes subtle-fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scale-up {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-subtle-fade {
+            animation: subtle-fade-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        .animate-scale-up {
+            animation: scale-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Hover effect for cards */
+        .glass:hover {
+            border-color: rgba(249, 115, 22, 0.5) !important;
+            background: rgba(249, 115, 22, 0.05);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.08);
+        }
+
+        .light-mode .glass:hover {
+            border-color: rgba(234, 88, 12, 0.45) !important;
+            background: rgba(249, 115, 22, 0.03);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.05);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen light-mode">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vidyate-tech-hub.vercel.app/sitemap.xml
