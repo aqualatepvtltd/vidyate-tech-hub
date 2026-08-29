@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="opacity-60 text-sm md:text-lg max-w-xl mb-8 md:mb-10 font-medium leading-relaxed px-2" 
+          className="opacity-60 text-sm md:text-lg max-w-xxl mb-8 md:mb-10 font-medium leading-relaxed px-2" 
           style={{ color: 'var(--text-main)' }}
         >
           The ultimate digital academic ecosystem for engineering students. Access expert-verified DSA scripts, microprocessor assembly sheets, board exam lab manuals, and thermodynamics maps.
