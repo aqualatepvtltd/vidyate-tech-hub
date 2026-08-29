@@ -11,6 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 const Home = React.lazy(() => import('./pages/Home'));
 const GetCertified = React.lazy(() => import('./pages/GetCertified'));
 const PaidTestPage = React.lazy(() => import('./pages/PaidTestPage'));
+const TestPage = React.lazy(() => import('./pages/TestPage'));
 const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
@@ -154,6 +155,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/get-certified" element={<GetCertified />} />
               <Route path="/paid-certification-test/:courseId" element={<PaidTestPage />} />
+              <Route path="/test-page" element={<TestPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />

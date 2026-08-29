@@ -1,13 +1,14 @@
 import {CertificationCourse } from '../types';
 
 export const CERTIFICATION_COURSES: CertificationCourse[] = [
-  // {
-  //   id: 'full-stack-web-bootcamp',
-  //   name: 'Advanced Full-Stack Software Engineering & System Architecture',
-  //   description: 'Learn scalable backend structures, RESTful/GraphQL APIs, microservices, containerization with Docker, and automated CI/CD deployments.',
-  //   difficulty: 'Advance',
-  //   materialLink: '#',
-  //   testLink: '#',
-  //   isPaid: true
-  // },
+  {
+    id: 'intro-to-ai',
+    name: 'Introduction to Artificial Intelligence',
+    description: 'Learn the fundamentals of Artificial Intelligence, including its history, applications, and basic concepts. This course provides a solid foundation for understanding AI technologies and their impact on various industries.',
+    difficulty: 'Basic',
+    materialLink: 'https://drive.google.com/file/d/1GvNLnA7osGu8iyTC-iOdHnNYUFf5VsOm/view?usp=sharing',
+    testLink: 'https://forms.gle/Uj2uu2SSxuC91eAM6',
+    isPaid: false,
+    quiz: false,
+  },
 ];

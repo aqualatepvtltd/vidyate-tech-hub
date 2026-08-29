@@ -86,7 +86,7 @@ const GetCertified: React.FC = () => {
   };
 
   const handleAttemptTest = (course: CertificationCourse) => {
-    navigate(`/paid-certification-test/${course.id}`, { state: { testLink: course.testLink } });
+    navigate('/test-page', { state: { testLink: course.testLink } });
   };
 
   return (
