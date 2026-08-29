@@ -1,4 +1,4 @@
-import {CertificationCourse } from '../types';
+import { CertificationCourse } from '../types';
 
 export const CERTIFICATION_COURSES: CertificationCourse[] = [
   {
@@ -11,7 +11,17 @@ export const CERTIFICATION_COURSES: CertificationCourse[] = [
     isPaid: false,
     quiz: false,
   },
-   {
+  {
+    id: 'full-stack-web-dev',
+    name: 'Full-Stack Web Development Fundamentals',
+    description: 'Learn the fundamentals of Full-Stack Web Development, including its history, applications, and basic concepts. This course provides a solid foundation for understanding web development technologies and their impact on various industries.',
+    difficulty: 'Basic',
+    materialLink: 'https://drive.google.com/file/d/1kN7G6hHUYuDBxyOJkSFGlXxU1hdfD0I4/view?usp=sharing',
+    testLink: 'https://forms.gle/5VxXw3K6WM1Mh3SVA',
+    isPaid: false,
+    quiz: false,
+  },
+  {
     id: 'js-react-core',
     name: 'JavaScript & React Core Competency ',
     description: 'JavaScript is the backbone of modern web development, and React is one of the most popular libraries for building user interfaces. This course covers essential JavaScript concepts and dives into React fundamentals, enabling you to create dynamic and responsive web applications.',
