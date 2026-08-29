@@ -248,7 +248,7 @@ const GetCertified: React.FC = () => {
                           </span>
                         )}
                         {!course.isPaid && !course.quiz && (
-                          <span className="px-2 py-1 bg-orange-600 text-white text-[9px] font-black uppercase tracking-wider rounded-md shadow-sm">
+                          <span className="px-2 py-1 bg-orange-500 text-white text-[9px] font-black uppercase tracking-wider rounded-md shadow-sm">
                             Basic
                           </span>
                         )}
