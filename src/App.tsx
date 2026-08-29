@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { HashRouter, Routes, Route, Link, NavLink } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -22,48 +22,33 @@ const PageLoader = () => (
   <div className="min-h-[50vh] flex flex-col items-center justify-center animate-subtle-fade">
     <div className="relative w-16 h-16">
       {/* Outer spinning ring */}
-      <div className="absolute inset-0 rounded-full border-4 border-neutral-200 border-t-black dark:border-neutral-800 dark:border-t-white animate-spin"></div>
+      <div className="absolute inset-0 rounded-full border-4 border-neutral-200 border-t-black animate-spin"></div>
       {/* Inner glowing pulsing orb */}
-      <div className="absolute inset-2 rounded-full bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 animate-pulse flex items-center justify-center">
+      <div className="absolute inset-2 rounded-full bg-neutral-100 border border-neutral-200 animate-pulse flex items-center justify-center">
      
       </div>
     </div>
-    <span className="mt-4 text-[10px] font-black uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 animate-pulse">
+    <span className="mt-4 text-[10px] font-black uppercase tracking-[0.25em] text-neutral-500 animate-pulse">
       Loading ...
     </span>
   </div>
 );
 
 export default function App() {
-  const [isLightMode, setIsLightMode] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if (isLightMode) {
-      document.body.classList.add('light-mode');
-      document.documentElement.classList.remove('dark');
-    } else {
-      document.body.classList.remove('light-mode');
-      document.documentElement.classList.add('dark');
-    }
-  }, [isLightMode]);
-
-  const toggleTheme = () => {
-    setIsLightMode(!isLightMode);
-  };
-
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `text-xs font-black uppercase tracking-wider transition-all duration-300 hover:text-black dark:hover:text-white ${
+    `text-xs font-black uppercase tracking-wider transition-all duration-300 hover:text-black ${
       isActive 
-        ? 'text-black dark:text-white border-b-2 border-black dark:border-white pb-1' 
-        : 'opacity-75 text-neutral-600 dark:text-neutral-400'
+        ? 'text-black border-b-2 border-black pb-1' 
+        : 'opacity-75 text-neutral-600'
     }`;
 
   const mobileNavLinkClass = ({ isActive }: { isActive: boolean }) =>
     `block py-3 px-4 text-sm font-black uppercase tracking-wider transition-all rounded-xl ${
       isActive 
-        ? 'text-black dark:text-white bg-black/5 dark:bg-white/5' 
-        : 'opacity-80 hover:bg-black/5 dark:hover:bg-white/5'
+        ? 'text-black bg-black/5' 
+        : 'opacity-80 hover:bg-black/5'
     }`;
 
   return (
@@ -98,20 +83,8 @@ export default function App() {
               </NavLink>
             </nav>
 
-            {/* Header Right Actions (Toggle + Mobile Button) */}
+            {/* Header Right Actions */}
             <div className="flex items-center gap-4">
-              {/* Light/Dark Toggle */}
-              <button
-                onClick={toggleTheme}
-                className="w-10 h-10 rounded-xl glass border hover:scale-105 active:scale-95 transition-all flex items-center justify-center cursor-pointer"
-                style={{ borderColor: 'var(--glass-border)' }}
-                aria-label="Toggle Theme Mode"
-              >
-                <span className="material-symbols-rounded text-xl" style={{ color: isLightMode ? '#000000' : '#ffffff' }}>
-                  {isLightMode ? 'dark_mode' : 'light_mode'}
-                </span>
-              </button>
-
               {/* Mobile Drawer Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

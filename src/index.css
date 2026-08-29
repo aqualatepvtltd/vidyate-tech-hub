@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@variant dark (&:where(.dark, .dark *));
-
 /* Global Orange Border Overrides for Stark / Glass aesthetics */
 .border,
 .border-t,
@@ -12,18 +10,6 @@
 [class*="border-gray-"],
 [class*="border-slate-"] {
   border-color: rgba(249, 115, 22, 0.25) !important;
-}
-
-/* Dark mode specific orange border overrides */
-.dark .border,
-.dark .border-t,
-.dark .border-b,
-.dark .border-l,
-.dark .border-r,
-.dark [class*="border-neutral-"],
-.dark [class*="border-gray-"],
-.dark [class*="border-slate-"] {
-  border-color: rgba(249, 115, 22, 0.2) !important;
 }
 
 /* Ensure focus states and hover transitions are smooth and respect orange themes */

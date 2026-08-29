@@ -10,7 +10,7 @@ const Privacy: React.FC = () => {
         description="Read Vidyate's Privacy Policy to understand how we collect, use, and protect your personal information and engineering academic data."
         keywords="Privacy Policy, Data Protection, Student Data Privacy, Vidyate Terms, Information Security"
       />
-      <Link to="/" className="inline-flex items-center gap-2 text-theme-muted hover:text-black dark:hover:text-white transition-all font-black text-[10px] uppercase tracking-widest mb-8">
+      <Link to="/" className="inline-flex items-center gap-2 text-theme-muted hover:text-black transition-all font-black text-[10px] uppercase tracking-widest mb-8">
         <span className="material-symbols-rounded text-sm">home</span>
         Back to Home
       </Link>
@@ -24,16 +24,16 @@ const Privacy: React.FC = () => {
           <p>Vidyate Tech Hub ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services (collectively, the "Services"). Please read this policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</p>
 
           <section className="space-y-2">
-            <h2 className="text-base font-black text-black dark:text-white underline decoration-1">1. Information We Collect</h2>
+            <h2 className="text-base font-black text-black underline decoration-1">1. Information We Collect</h2>
             <p>We may collect information about you in a variety of ways. The information we may collect on the Service includes:</p>
-            <h3 className="font-bold text-black dark:text-white">Personal Data</h3>
+            <h3 className="font-bold text-black">Personal Data</h3>
             <p>Personally identifiable information, such as your name, email address, and billing metadata, that you voluntarily give to us when you subscribe to our newsletters, check out reference textbook orders, or register support inquiries.</p>
-            <h3 className="font-bold text-black dark:text-white">Derivative Data</h3>
+            <h3 className="font-bold text-black">Derivative Data</h3>
             <p>Information our servers automatically collect when you access the Services, such as your IP address, browser type, operating system, and access times. This data helps us monitor geographic performance in India and refine database loading times.</p>
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-base font-black text-black dark:text-white underline decoration-1">2. Use of Your Information</h2>
+            <h2 className="text-base font-black text-black underline decoration-1">2. Use of Your Information</h2>
             <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Services to:</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Process textbook order shipments and handle invoice correspondence.</li>
@@ -44,7 +44,7 @@ const Privacy: React.FC = () => {
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-base font-black text-black dark:text-white underline decoration-1">3. Third-Party Service Providers</h2>
+            <h2 className="text-base font-black text-black underline decoration-1">3. Third-Party Service Providers</h2>
             <p>We do not share, sell, or lease your private coordinates with commercial agencies. We leverage reliable external SDKs strictly for system operations:</p>
             <ul className="list-disc pl-5 space-y-1">
               <li><strong>Web3Forms:</strong> Handles academic and contact form transmissions securely.</li>
@@ -53,17 +53,17 @@ const Privacy: React.FC = () => {
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-base font-black text-black dark:text-white underline decoration-1">4. Data Retention</h2>
+            <h2 className="text-base font-black text-black underline decoration-1">4. Data Retention</h2>
             <p>We retain subscriber credentials and book receipt logs only for as long as necessary to complete book shipments, resolve billing disputes, or fulfill academic service obligations.</p>
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-base font-black text-black dark:text-white underline decoration-1">5. Children's Privacy</h2>
+            <h2 className="text-base font-black text-black underline decoration-1">5. Children's Privacy</h2>
             <p>Vidyate Tech Hub does not actively collect personally identifiable info from individuals under 13. If we discover an underage registration, we instantly scrub the database profile logs.</p>
           </section>
 
-          <section className="space-y-2 pt-4 border-t border-neutral-200 dark:border-neutral-800">
-            <h2 className="text-base font-black text-black dark:text-white underline decoration-1">6. Contact Us</h2>
+          <section className="space-y-2 pt-4 border-t border-neutral-200">
+            <h2 className="text-base font-black text-black underline decoration-1">6. Contact Us</h2>
             <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:vidyatetechhub@gmail.com" className="hover:underline font-black">vidyatetechhub@gmail.com</a>.</p>
           </section>
         </div>

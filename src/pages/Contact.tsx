@@ -75,8 +75,8 @@ const Contact: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-20 text-center animate-scale-up">
         <SEO title="Message Sent Successfully" />
         <div className="glass p-12 md:p-20 rounded-3xl border shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1.5 bg-black dark:bg-white"></div>
-          <div className="w-20 h-20 bg-neutral-100 dark:bg-neutral-900 rounded-full flex items-center justify-center mx-auto mb-8 border">
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-black"></div>
+          <div className="w-20 h-20 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-8 border">
             <span className="material-symbols-rounded text-4xl">mark_email_read</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tighter" style={{ color: 'var(--text-main)' }}>Inquiry Sent.</h2>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
               setIsSubmitted(false);
               setFormData({ name: '', email: '', subject: '', message: '' });
             }}
-            className="px-8 py-3.5 bg-black dark:bg-white text-white dark:text-black font-black rounded-xl text-xs uppercase tracking-widest hover:shadow-lg active:scale-95 transition-all"
+            className="px-8 py-3.5 bg-black text-white font-black rounded-xl text-xs uppercase tracking-widest hover:shadow-lg active:scale-95 transition-all"
           >
             Submit New Ticket
           </button>
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
               >
                 <div className="flex items-start gap-5">
                   <div 
-                    className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110 bg-neutral-100 dark:bg-neutral-900 border"
+                    className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110 bg-neutral-100 border"
                   >
                     <span className="material-symbols-rounded text-2xl">{info.icon}</span>
                   </div>
@@ -216,7 +216,7 @@ const Contact: React.FC = () => {
             <button 
               type="submit"
               disabled={isLoading}
-              className="w-full py-4 bg-black dark:bg-white text-white dark:text-black font-black rounded-xl text-xs uppercase tracking-widest shadow-lg hover:scale-[1.01] transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full py-4 bg-black text-white font-black rounded-xl text-xs uppercase tracking-widest shadow-lg hover:scale-[1.01] transition-all disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {isLoading ? (
                 <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>

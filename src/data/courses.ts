@@ -11,4 +11,14 @@ export const CERTIFICATION_COURSES: CertificationCourse[] = [
     isPaid: false,
     quiz: false,
   },
+   {
+    id: 'js-react-core',
+    name: 'JavaScript & React Core Competency ',
+    description: 'JavaScript is the backbone of modern web development, and React is one of the most popular libraries for building user interfaces. This course covers essential JavaScript concepts and dives into React fundamentals, enabling you to create dynamic and responsive web applications.',
+    difficulty: 'Quiz',
+    materialLink: '#',
+    testLink: 'https://forms.gle/UjwANH1awMZYKjV66',
+    isPaid: false,
+    quiz: true,
+  },
 ];

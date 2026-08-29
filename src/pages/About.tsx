@@ -35,7 +35,7 @@ const About: React.FC = () => {
           style={{ borderColor: 'var(--glass-border)' }}
         >
           <div className="lg:col-span-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-800 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 text-neutral-800 border border-neutral-200 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
               <span className="material-symbols-rounded text-sm">radar</span>
               Our Mission
             </div>
@@ -50,11 +50,11 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="lg:col-span-2 space-y-4">
-            <div className="glass p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-black/25 dark:hover:border-white/25 transition-colors flex items-center gap-4">
+            <div className="glass p-5 rounded-xl border border-neutral-200 hover:border-black/25 transition-colors flex items-center gap-4">
               <span className="material-symbols-rounded text-2xl">hub</span>
               <h4 className="font-bold text-xs md:text-sm">Centralized Study Hub</h4>
             </div>
-            <div className="glass p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-black/25 dark:hover:border-white/25 transition-colors flex items-center gap-4">
+            <div className="glass p-5 rounded-xl border border-neutral-200 hover:border-black/25 transition-colors flex items-center gap-4">
               <span className="material-symbols-rounded text-2xl">verified_user</span>
               <h4 className="font-bold text-xs md:text-sm">Department Toppers Verified</h4>
             </div>
@@ -65,12 +65,12 @@ const About: React.FC = () => {
       {/* Curation Process Section */}
       <section className="py-16 md:py-24">
         <div className="text-center mb-12">
-          <span className="text-neutral-500 dark:text-neutral-400 font-black text-[10px] tracking-[0.3em] uppercase mb-4 block">Our Quality Pipeline</span>
+          <span className="text-neutral-500 font-black text-[10px] tracking-[0.3em] uppercase mb-4 block">Our Quality Pipeline</span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter" style={{ color: 'var(--text-main)' }}>Curation Standards.</h2>
         </div>
         
         <div className="relative max-w-2xl mx-auto">
-          <div className="absolute left-8 -translate-x-1/2 top-0 w-0.5 h-full bg-neutral-200 dark:bg-neutral-800 -z-10"></div>
+          <div className="absolute left-8 -translate-x-1/2 top-0 w-0.5 h-full bg-neutral-200 -z-10"></div>
           {[
             { title: 'Top-Tier Collection', desc: 'We collect notes, lab manuals, and GATE papers from rank-holders and experienced engineering instructors.', icon: 'cloud_sync' },
             { title: 'Rigorous Verification', desc: 'Our advisory practitioners evaluate resources against the latest university exam syllabi and corporate software industry standards.', icon: 'gavel' },
@@ -100,7 +100,7 @@ const About: React.FC = () => {
           </p>
           <Link 
             to="/"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-xl font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all"
           >
             <span>Explore Engineering Pathways</span>
             <span className="material-symbols-rounded text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>

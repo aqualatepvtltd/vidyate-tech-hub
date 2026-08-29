@@ -88,8 +88,7 @@ const Home: React.FC = () => {
           className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-4 md:mb-6 leading-[1.08]" 
           style={{ color: 'var(--text-main)' }}
         >
-          Accelerate Your
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-black via-neutral-700 to-neutral-500 dark:from-white dark:via-neutral-300 dark:to-neutral-500 drop-shadow-sm pr-1 block sm:inline"> Engineering </span>Journey
+          Accelerate Your Engineering Journey
         </motion.h1>
 
         <motion.p 
@@ -110,7 +109,7 @@ const Home: React.FC = () => {
         >
           <Link
             to="/get-certified"
-            className="w-full sm:w-auto px-6 md:px-8 py-3.5 md:py-4 rounded-xl bg-black dark:bg-white text-white dark:text-black font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95 flex items-center justify-center gap-2 border border-transparent dark:border-neutral-200"
+            className="w-full sm:w-auto px-6 md:px-8 py-3.5 md:py-4 rounded-xl bg-black text-white font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95 flex items-center justify-center gap-2 border border-transparent"
             style={{ textDecoration: 'none' }}
           >
             <span className="material-symbols-rounded text-base">verified</span>
@@ -136,7 +135,7 @@ const Home: React.FC = () => {
             </p>
             <Link 
               to="/get-certified"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-xl font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95"
             >
               <span>Explore Certification Programs</span>
               <span className="material-symbols-rounded group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -205,7 +204,7 @@ const Home: React.FC = () => {
             </p>
             <Link 
               to="/about"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-xl font-black text-xs md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95"
             >
               <span>Discover Our Mission</span>
               <span className="material-symbols-rounded group-hover:translate-x-1 transition-transform text-sm">arrow_forward</span>
@@ -236,7 +235,7 @@ const Home: React.FC = () => {
             <div className="w-full max-w-sm">
               {subscribed ? (
                 <div className="p-8 md:p-10 glass border-neutral-500/20 rounded-2xl text-center animate-fade-in bg-neutral-500/5">
-                  <span className="material-symbols-rounded text-4xl md:text-5xl text-black dark:text-white mb-4 md:mb-5">verified</span>
+                  <span className="material-symbols-rounded text-4xl md:text-5xl text-black mb-4 md:mb-5">verified</span>
                   <h3 className="text-lg md:text-xl font-black mb-2" style={{ color: 'var(--text-main)' }}>Welcome Aboard!</h3>
                   <p className="opacity-50 text-xs font-medium" style={{ color: 'var(--text-main)' }}>Your first engineering cheat sheet is on the way.</p>
                 </div>
@@ -260,7 +259,7 @@ const Home: React.FC = () => {
                     <button 
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full px-6 py-3.5 rounded-xl md:absolute md:right-1.5 md:top-1.5 md:w-auto md:py-2.5 bg-black dark:bg-white text-white dark:text-black font-black text-xs transition-all hover:shadow-lg active:scale-95 disabled:opacity-50 flex items-center justify-center gap-2"
+                      className="w-full px-6 py-3.5 rounded-xl md:absolute md:right-1.5 md:top-1.5 md:w-auto md:py-2.5 bg-black text-white font-black text-xs transition-all hover:shadow-lg active:scale-95 disabled:opacity-50 flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>

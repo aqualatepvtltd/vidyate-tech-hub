@@ -123,7 +123,7 @@ const GetCertified: React.FC = () => {
               }}
             >
               {/* Step Number Circle */}
-              <div className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-black dark:bg-white flex items-center justify-center font-black text-white dark:text-black text-base left-1/2 transform -translate-x-1/2">
+              <div className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-black flex items-center justify-center font-black text-white text-base left-1/2 transform -translate-x-1/2">
                 {step.number}
               </div>
 
@@ -147,7 +147,7 @@ const GetCertified: React.FC = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-0.5 bg-neutral-200 dark:bg-neutral-800 mb-12 md:mb-16"></div>
+        <div className="h-0.5 bg-neutral-200 mb-12 md:mb-16"></div>
 
         {/* Available Courses */}
         <div className="mb-12">
@@ -189,8 +189,8 @@ const GetCertified: React.FC = () => {
                 key={f.id}
                 onClick={() => setFilter(f.id as any)}
                 className={`flex-1 px-4 py-2.5 rounded-lg font-black text-[10px] md:text-xs uppercase tracking-wider transition-all duration-300 ${filter === f.id
-                    ? 'text-white dark:text-black shadow-lg bg-black dark:bg-white' // Active state
-                    : 'opacity-60 hover:opacity-100' // Inactive state
+                    ? 'text-white shadow-lg bg-black' 
+                    : 'text-black opacity-60 hover:opacity-100 bg-white'
                   }`}
               >
                 {f.label}
@@ -213,7 +213,7 @@ const GetCertified: React.FC = () => {
               <p className="opacity-50 mt-2 mb-6 text-xs" style={{ color: 'var(--text-main)' }}>Click below to switch to the '{suggestion.target}' tab.</p>
               <button
                 onClick={() => setFilter(suggestion.target)}
-                className="px-8 py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-black text-xs uppercase tracking-widest hover:shadow-lg active:scale-95 transition-all"
+                className="px-8 py-3 rounded-xl bg-black text-white font-black text-xs uppercase tracking-widest hover:shadow-lg active:scale-95 transition-all"
               >
                 Switch to {suggestion.target}
               </button>
