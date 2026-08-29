@@ -10,9 +10,9 @@ const GetCertified: React.FC = () => {
   const [filter, setFilter] = useState<'advance' | 'basic' | 'quiz'>('advance');
 
   const filters = [
-    { id: 'advance', label: 'Advance Programs', color: 'var(--text-main)' },
-    { id: 'basic', label: 'Basic Foundations', color: '#525252' },
-    { id: 'quiz', label: 'National Quizzes', color: '#a3a3a3' },
+    { id: 'advance', label: 'Advance', color: 'var(--text-main)' },
+    { id: 'basic', label: 'Basic', color: '#525252' },
+    { id: 'quiz', label: 'Quiz', color: '#a3a3a3' },
   ];
 
   const { coursesToShow, suggestion } = useMemo(() => {
@@ -233,22 +233,22 @@ const GetCertified: React.FC = () => {
                 >
                   <div>
                     <div className="flex items-start justify-between mb-3 gap-4">
-                      <h3 className="text-lg md:text-xl font-black group-hover:underline transition-all leading-snug" style={{ color: 'var(--text-main)' }}>
+                      <h3 className="text-lg md:text-xl font-black transition-all leading-snug" style={{ color: 'var(--text-main)' }}>
                         {course.name}
                       </h3>
                       <div className="flex-shrink-0 flex items-center gap-2">
                         {course.isPaid && (
-                          <span className="px-2 py-1 bg-black text-white dark:bg-white dark:text-black text-[9px] font-black uppercase tracking-wider rounded-md">
+                          <span className="px-2 py-1 bg-orange-500 text-white text-[9px] font-black uppercase tracking-wider rounded-md shadow-sm">
                             Advance
                           </span>
                         )}
                         {!course.isPaid && course.quiz && (
-                          <span className="px-2 py-1 bg-neutral-600 text-white dark:bg-neutral-400 dark:text-black text-[9px] font-black uppercase tracking-wider rounded-md">
+                          <span className="px-2 py-1 bg-orange-500 text-white text-[9px] font-black uppercase tracking-wider rounded-md shadow-sm">
                             QUIZ
                           </span>
                         )}
                         {!course.isPaid && !course.quiz && (
-                          <span className="px-2 py-1 bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black text-[9px] font-black uppercase tracking-wider rounded-md">
+                          <span className="px-2 py-1 bg-orange-600 text-white text-[9px] font-black uppercase tracking-wider rounded-md shadow-sm">
                             Basic
                           </span>
                         )}
@@ -270,7 +270,7 @@ const GetCertified: React.FC = () => {
                     {!course.quiz && (
                       <button
                         onClick={() => handleDownloadMaterial(course)}
-                        className="flex-1 px-4 py-3 rounded-xl font-black text-xs text-white dark:text-black bg-neutral-800 dark:bg-neutral-200 transition-all duration-300 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2"
+                        className="flex-1 px-4 py-3 rounded-xl font-black text-xs text-white bg-black transition-all duration-300 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2"
                       >
                         <span className="material-symbols-rounded text-base">download</span>
                         <span>Study Material</span>
@@ -279,10 +279,10 @@ const GetCertified: React.FC = () => {
 
                     <button
                       onClick={() => handleAttemptTest(course)}
-                      className={`px-4 py-3 rounded-xl font-black text-xs text-white dark:text-black transition-all duration-300 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 ${course.quiz ? 'flex-1 bg-neutral-700 dark:bg-neutral-300' : 'flex-1 bg-black dark:bg-white'}`}
+                      className={`px-4 py-3 rounded-xl font-black text-xs text-white transition-all duration-300 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 ${course.quiz ? 'flex-1 bg-orange-500' : 'flex-1 bg-orange-500'}`}
                     >
                       <span className="material-symbols-rounded text-base">assignment</span>
-                      <span>{course.quiz ? 'Join National Quiz' : 'Begin Evaluation'}</span>
+                      <span>{course.quiz ? 'Join Quiz' : 'Begin Evaluation'}</span>
                     </button>
                   </div>
                 </div>
